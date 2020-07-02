@@ -60,7 +60,7 @@ class FooterExampleState extends State<FooterExample>{
 ### Pull Requests
 I Welcome and i encourage all Pull Requests
 
-### Created and Maintained by
+## Created and Maintained by
 * Author: [Tafadzwa Lameck Nyamukapa](https://github.com/nyakaz73) :
 * Email:  [tafadzwalnyamukapa@gmail.com]
 * Open for any colleboration and Remote Work!!
