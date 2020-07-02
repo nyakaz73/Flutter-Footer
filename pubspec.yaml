@@ -1,11 +1,11 @@
 name: footer
 description: A new Flutter package which helps developers in creating Customisable Footer for both Android and IOS Apps.
 version: 0.0.1
-author: Tafadzwa L Nyamukapa <tafadzwalnyamukapa@gmail.com>
+#author: Tafadzwa L Nyamukapa <tafadzwalnyamukapa@gmail.com>
 homepage: https://github.com/nyakaz73/Flutter-Footer
 
 environment:
-  sdk: ">=2.7.0-dev.28.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
