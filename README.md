@@ -5,7 +5,7 @@ A new Flutter package which helps developers in creating Customisable Footer for
 ### Show some :heart: and :star: the repo to support the project
 
 ### Screenshots
-<img src="footer1.jpg" height="300em" /> <img src="footer2.jpg" height="300em" />
+<img src="footer1.jpg" width="350em" height="800em" /> <img src="footer2.jpg" width="350em" height="800em" />
 ## Getting Started
 ## Usag5
 [Example](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart)
