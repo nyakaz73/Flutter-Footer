@@ -1,10 +1,10 @@
-# footer
+# Flutter Footer
 
 A new Flutter package which helps developers in creating Customisable Footer for both Android and IOS Apps.
 
-### Show some :heart: and star the repo to support the project
+### Show some :heart: and :star: the repo to support the project
 
-##Screenshots
+### Screenshots
 <img src="footer1.png" height="300em" /> <img src="footer2.png" height="300em" />
 ## Getting Started
 ## Usage
@@ -57,16 +57,16 @@ class FooterExampleState extends State<FooterExample>{
 
 }
 ```
-# Pull Requests
+### Pull Requests
 I Welcome and i encourage all Pull Requests
 
-##Created and Maintained by
-> Author: [Tafadzwa Lameck Nyamukapa]
-> Email:  [tafadzwalnyamukapa@gmail.com]
-> Open for any colleboration and Remote Work!!
-> Happy Fluttering
+### Created and Maintained by
+* Author: [Tafadzwa Lameck Nyamukapa](https://github.com/nyakaz73) :
+* Email:  [tafadzwalnyamukapa@gmail.com]
+* Open for any colleboration and Remote Work!!
+* Happy Fluttering
 
-##License
+### License
 ```
 MIT License
 
