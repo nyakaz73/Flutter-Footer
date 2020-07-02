@@ -12,8 +12,6 @@ class FooterView extends StatefulWidget{
     }else{
       this.flex = 2;
     }
-    this.footer = new Footer(child: null);
-
   }
   @override
   FooterViewState createState() {
@@ -38,7 +36,7 @@ class FooterViewState extends State<FooterView>{
           child: new Column(
             children: <Widget>[
               new Expanded(
-                flex: (10-widget.flex),
+                flex: 10-widget.flex,
                   child: new Container(),
               ),
               new Expanded(

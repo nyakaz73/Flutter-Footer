@@ -21,41 +21,191 @@ To use this package :
 ```
 
 ### How to Use
+
+The flutter footer uses a component called [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart). The [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Component take the three arguments as follows:
+
+* 1. children : which is a Scrollable List of Widgets
+* 2. footer : Takes a Footer Component which takes the Customizable Widget e.g  a Container Widget
+* 3. flex : This takes an interger from 1-10 which flex the footer space of the screen with 2 being the default
+
+* NB: The above aguments only two are mandatory which is children and footer. See [Example](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart)
+
+
 ```dart
-class FooterExample extends StatefulWidget{
+FooterView(
+  children: <Widget>[
+    ...                     //this is a Scrollable List of Widgets
+  ],
+  footer : Footer(           //this take the Footer Component which has 4 arguments with one being mandatory ie the child
+    child:  Container(),         //This take a Cusstomisable Widget eg Container, Column e.t.c
+    ...                        //See Description Below for the other arguments of the Footer Component
+  ),
+  flex: 2      //this take an interger that ranges from 1-10 with 2 being the default for the Footer Area
+)
+```
+
+The [Footer](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Component take four arguments with one being Mandatory ie child Widget . The arguments are as follow
+
+```dart
+Footer(
+  child: Container(),  //The child Widget is mandatory takes any Customisable Widget for the footer
+  backgroundColor : Colors.grey.shade200  // defines the background Colors of the Footer with default Colors.grey.shade200
+  padding: 5.0 // Take a double with default being 5.0
+  alignment: Alignment.bottomCenter //this is of type Aligment with default being Alignment.bottomCenter
+)
+```
+
+## Below is a Full Example
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:footer/footer.dart';
+import 'package:footer/footer_view.dart';
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  static Map<int, Color> color = {
+    50:Color.fromRGBO(4, 131, 184, .1),
+    100:Color.fromRGBO(4, 131, 184, .2),
+    200:Color.fromRGBO(4, 131, 184, .3),
+    300:Color.fromRGBO(4, 131, 184, .4),
+    400:Color.fromRGBO(4, 131, 184, .5),
+    500:Color.fromRGBO(4, 131, 184, .6),
+    600:Color.fromRGBO(4, 131, 184, .7),
+    700:Color.fromRGBO(4, 131, 184, .8),
+    800:Color.fromRGBO(4, 131, 184, .9),
+    900:Color.fromRGBO(4, 131, 184, 1),
+  };
+  //MaterialColor myColor = MaterialColor(0xFF162A49, color);
+  
   @override
-  FooterExampleState createState() {
-    return new FooterExampleState();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Footer',
+      theme: ThemeData(
+        primarySwatch: MaterialColor(0xFF162A49, color),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: FooterPage(),
+    );
   }
 }
 
-class FooterExampleState extends State<FooterExample>{
+class FooterPage extends StatefulWidget {
+  @override
+  FooterPageState createState() {
+    return new FooterPageState();
+  }
+}
+
+class FooterPageState extends State<FooterPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: new Text('Footer View'),
+        title: new  Text('Flutter Footer View',style: TextStyle(fontWeight:FontWeight.w200),)
       ),
-      //FooterView Which is a Scrollable Widget that take the children and the Footer
+      drawer: new Drawer(),
       body: FooterView(
           children: <Widget>[
-            new Center(
-              child: new Text('Footer View Example'),
-            )
+            new Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                new Padding(
+                  padding: EdgeInsets.only(top:50,left: 70),
+                    child: new Text('Scrollable View Section'),
+                )
+              ],
+            ),
           ],
           footer: new Footer(
+              child: new Padding(
+              padding: EdgeInsets.all(5.0),
               child: new Column(
-                children: <Widget>[
-                  new Text('All Rights Reserved'),
-                  new Text('Powered by Nexsport')
-                ],
-              )
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children:<Widget>[
+                  new Center(
+                    child:new Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        new Container(
+                          height: 45.0,
+                          width: 45.0,
+                          child: Center(
+                            child:Card(
+                              elevation: 5.0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25.0), // half of height and width of Image
+                              ),
+                              child: IconButton(
+                                icon: new Icon(Icons.audiotrack,size: 20.0,),
+                                color: Color(0xFF162A49),
+                                onPressed: () {},
+                              ),
+                            ),
+                          )
+                        ),
+                        new Container(
+                          height: 45.0,
+                          width: 45.0,
+                          child: Center(
+                            child:Card(
+                              elevation: 5.0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25.0), // half of height and width of Image
+                              ),
+                              child: IconButton(
+                                icon: new Icon(Icons.fingerprint,size: 20.0,),
+                                color: Color(0xFF162A49),
+                                onPressed: () {},
+                              ),
+                            ),
+                          )
+                        ),
+                        new Container(
+                          height: 45.0,
+                          width: 45.0,
+                          child: Center(
+                            child:Card(
+                              elevation: 5.0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25.0), // half of height and width of Image
+                              ),
+                              child: IconButton(
+                                icon: new Icon(Icons.call,size: 20.0,),
+                                color: Color(0xFF162A49),
+                                onPressed: () {},
+                              ),
+                            ),
+                          )
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  Text('Copyright ©2020, All Rights Reserved.',style: TextStyle(fontWeight:FontWeight.w300, fontSize: 12.0, color: Color(0xFF162A49)),),
+                  Text('Powered by Nexsport',style: TextStyle(fontWeight:FontWeight.w300, fontSize: 12.0,color: Color(0xFF162A49)),),
+                ]
+              ),
+            ),
           )
+      ),
+      floatingActionButton: new FloatingActionButton(
+              elevation: 10.0,
+              child: new Icon(Icons.chat),
+              backgroundColor: Color(0xFF162A49),
+              onPressed: (){
+              }
       ),
     );
   }
-
 }
+
 ```
 ### Pull Requests
 I Welcome and i encourage all Pull Requests
