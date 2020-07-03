@@ -56,7 +56,10 @@ Footer(
 ```
 
 ## Simple Example
-In this Example i will simply show you how to use the FooterView Widget inside a Scaffold body. 
+In this Example i will show you how you can simply use the [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Widget inside a Scaffold body. 
+
+* Note that when the children list is not overflowing the Footer will be fixed right at the bottom of the Page.
+* If there is overflow the whole page will become scrollable and the footer wont be fixed . See gif image below.
 ```dart
 @override
   Widget build(BuildContext context) {
