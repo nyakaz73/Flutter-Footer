@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 
 class Footer extends StatefulWidget{
   //final int flex;
-  Color backgroundColor;
-  Alignment alignment;
+  final Color backgroundColor;
+  final Alignment alignment;
   final double padding;
   final Widget child;
   Footer({this.backgroundColor,this.alignment,this.padding, @required this.child});
