@@ -5,7 +5,7 @@ A new Flutter package which helps developers in creating Customisable Footer for
 ### Show some :heart: and :star: the repo to support the project
 
 ### Screenshots
-<img src="footer1.jpg" width="400em" height="800em" /> <img src="footer2.jpg" width="400em" height="800em" />
+<img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer1.jpg" width="400em" height="800em" /> <img src="footer2.jpg" width="400em" height="800em" />
 ## Getting Started
 ## Usage
 [Example](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart)
@@ -88,7 +88,7 @@ In this Example i will show you how you can simply use the [FooterView](https://
 ```
 
 ## Scrollable FooterView 
-<img src="footer3.gif" width="400em" height="800em" />
+<img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer3.gif" width="400em" height="800em" />
 
 ## Below is a Full Example
 
@@ -249,7 +249,7 @@ I Welcome and i encourage all Pull Requests
 * Author: [Tafadzwa Lameck Nyamukapa](https://github.com/nyakaz73) :
 * Email:  [tafadzwalnyamukapa@gmail.com]
 * Open for any colleboration and Remote Work!!
-* Happy Fluttering
+* Happy Fluttering!!
 
 ### License
 ```
