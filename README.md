@@ -1,4 +1,4 @@
-# Flutter Footer
+# Flutter Footer Widget
 
 A new Flutter package which helps developers in creating Customisable Footer for both Android and IOS Apps.
 
@@ -7,7 +7,7 @@ A new Flutter package which helps developers in creating Customisable Footer for
 ### Screenshots
 <img src="footer1.jpg" width="400em" height="800em" /> <img src="footer2.jpg" width="400em" height="800em" />
 ## Getting Started
-## Usag5
+## Usage
 [Example](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart)
 
 To use this package :
@@ -22,29 +22,29 @@ To use this package :
 
 ### How to Use
 
-The flutter footer uses a component called [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart). The [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Component take the three arguments as follows:
+The flutter footer uses a component called [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart). The [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Component takes three arguments which are as follows:
 
-* 1. children : which is a Scrollable List of Widgets
-* 2. footer : Takes a Footer Component which takes the Customizable Widget e.g  a Container Widget
-* 3. flex : This takes an interger from 1-10 which flex the footer space of the screen with 2 being the default
+* 1. children : this is a Scrollable List of Widgets
+* 2. footer : Takes a Footer Component that takes a Customizable Widget e.g  a Container Widget
+* 3. flex : This takes an interger from 1-10. This flex the footer space of the screen with 2 being the default.
 
-* NB: The above aguments only two are mandatory which is children and footer. See [Example](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart)
+* NB: The children and footer parameters are mandatory. See [Example](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart)
 
 
 ```dart
 FooterView(
   children: <Widget>[
-    ...                     //this is a Scrollable List of Widgets
+    ...                      //this is a Scrollable List of Widgets
   ],
-  footer : Footer(           //this take the Footer Component which has 4 arguments with one being mandatory ie the child
-    child:  Container(),         //This take a Cusstomisable Widget eg Container, Column e.t.c
-    ...                        //See Description Below for the other arguments of the Footer Component
+  footer : Footer(           //this takes the Footer Component which has 4 arguments with one being mandatory ie the child
+    child:  Container(),     //This take a Cusstomisable Widget eg Container, Column e.t.c
+    ...                      //See Description Below for the other arguments of the Footer Component
   ),
-  flex: 2      //this take an interger that ranges from 1-10 with 2 being the default for the Footer Area
+  flex: 2                    //this take an interger that ranges from 1-10 with 2 being the default for the Footer Area
 )
 ```
 
-The [Footer](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Component take four arguments with one being Mandatory ie child Widget . The arguments are as follow
+The [Footer](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Component takes four arguments with one being Mandatory ie child Widget ,see Fig below.
 
 ```dart
 Footer(
@@ -54,6 +54,36 @@ Footer(
   alignment: Alignment.bottomCenter //this is of type Aligment with default being Alignment.bottomCenter
 )
 ```
+
+## Simple Example
+In this Example i will simply show you how to use the FooterView Widget inside a Scaffold body. 
+```dart
+@override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar:AppBar(
+        title: new Text('Footer View Example')
+      ),
+      body: new FooterView(
+        children:<Widget>[
+          new Text('We are scrollable'),
+          new Row(
+            children:<Widget>[
+              new Text('We are a list of Widgets Cell 1'),
+              new Text('We are a list of Widgets Cell 2'),
+            ]
+          ),
+          footer: new Footer(
+            child: Container(
+              child: Text('I am a Customizable footer!!')
+            )
+          )
+        ]
+      ),
+    );
+  }
+```
+
 ## Scrollable FooterView 
 <img src="footer3.gif" width="400em" height="800em" />
 
