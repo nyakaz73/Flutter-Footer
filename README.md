@@ -54,7 +54,7 @@ Footer(
   alignment: Alignment.bottomCenter //this is of type Aligment with default being Alignment.bottomCenter
 )
 ```
-## Sceollable View 
+## Scrollable FooterView 
 <img src="footer3.gif" width="400em" height="800em" />
 
 ## Below is a Full Example
