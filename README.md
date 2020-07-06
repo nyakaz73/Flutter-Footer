@@ -55,7 +55,7 @@ Footer(
 )
 ```
 
-##Imports
+## Imports
  After installing the [footer](https://github.com/nyakaz73/Flutter-Footer/blob/master/pubspec.yanl) package remember the imports
 ```dart
 import 'package:footer/footer.dart';
