@@ -15,9 +15,9 @@ To use this package :
 * add the dependancy to your [pubspec.yaml](https://github.com/nyakaz73/Flutter-Footer/blob/master/pubspec.yanl) file.
 ```yaml
     dependencies:
-        flutter:
-        sdk:flutter
-        footer:
+     flutter:
+       sdk:flutter
+     footer:
 ```
 
 ### How to Use
@@ -55,12 +55,23 @@ Footer(
 )
 ```
 
+##Imports
+ After installing the [footer](https://github.com/nyakaz73/Flutter-Footer/blob/master/pubspec.yanl) package remember the imports
+```dart
+import 'package:footer/footer.dart';
+import 'package:footer/footer_view.dart';
+```
+
 ## Simple Example
 In this Example i will show you how you can simply use the [FooterView](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/footer_example.dart) Widget inside a Scaffold body. 
 
 * Note that when the children list is not overflowing the Footer will be fixed right at the bottom of the Page.
 * If there is overflow the whole page will become scrollable and the footer wont be fixed . See gif image below.
 ```dart
+import 'package:footer/footer.dart';
+import 'package:footer/footer_view.dart';
+
+
 @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,26 +80,26 @@ In this Example i will show you how you can simply use the [FooterView](https://
       ),
       body: new FooterView(
         children:<Widget>[
-          new Text('We are scrollable'),
-          new Row(
-            children:<Widget>[
-              new Text('We are a list of Widgets Cell 1'),
-              new Text('We are a list of Widgets Cell 2'),
-            ]
+          new Padding(
+            padding: new EdgeInsets.only(top:200.0),
+            child: Center(
+              child: new Text('Scrollable View'),
+            ),
           ),
-          footer: new Footer(
-            child: Container(
-              child: Text('I am a Customizable footer!!')
-            )
-          )
-        ]
+        ],
+        footer: new Footer(
+          child: Padding(
+            padding: new EdgeInsets.all(10.0),
+            child: Text('I am a Customizable footer!!')
+          ),
+        ),
+        flex: 1, //default flex is 2
       ),
     );
   }
 ```
+<img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer0.jpg" width="400em" height="800em" />
 
-## Scrollable FooterView 
-<img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer3.gif" width="400em" height="800em" />
 
 ## Below is a Full Example
 
@@ -242,6 +253,9 @@ class FooterPageState extends State<FooterPage> {
 }
 
 ```
+## Scrollable FooterView
+<img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer3.gif" width="400em" height="800em" />
+
 ### Pull Requests
 I Welcome and i encourage all Pull Requests
 
