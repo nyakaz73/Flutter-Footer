@@ -50,7 +50,7 @@ The [Footer](https://github.com/nyakaz73/Flutter-Footer/blob/master/example/foot
 Footer(
   child: Container(),  //The child Widget is mandatory takes any Customisable Widget for the footer
   backgroundColor : Colors.grey.shade200  // defines the background Colors of the Footer with default Colors.grey.shade200
-  padding: 5.0 // Take a double with default being 5.0
+  padding: EdgeInsets.all(5.0),// Takes EdgeInsetsGeometry with default being EdgeInsets.all(5.0)
   alignment: Alignment.bottomCenter //this is of type Aligment with default being Alignment.bottomCenter
 )
 ```
@@ -88,10 +88,8 @@ import 'package:footer/footer_view.dart';
           ),
         ],
         footer: new Footer(
-          child: Padding(
-            padding: new EdgeInsets.all(10.0),
-            child: Text('I am a Customizable footer!!')
-          ),
+          child: Text('I am a Customizable footer!!'),
+          padding: EdgeInsets.all(10.0),
         ),
         flex: 1, //default flex is 2
       ),
@@ -169,8 +167,6 @@ class FooterPageState extends State<FooterPage> {
             ),
           ],
           footer: new Footer(
-              child: new Padding(
-              padding: EdgeInsets.all(5.0),
               child: new Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -238,7 +234,8 @@ class FooterPageState extends State<FooterPage> {
                   Text('Powered by Nexsport',style: TextStyle(fontWeight:FontWeight.w300, fontSize: 12.0,color: Color(0xFF162A49)),),
                 ]
               ),
-            ),
+              padding: EdgeInsets.all(5.0),
+            
           )
       ),
       floatingActionButton: new FloatingActionButton(
