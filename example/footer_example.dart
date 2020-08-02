@@ -63,8 +63,6 @@ class FooterPageState extends State<FooterPage> {
             ),
           ],
           footer: new Footer(
-              child: new Padding(
-              padding: EdgeInsets.all(5.0),
               child: new Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -132,7 +130,7 @@ class FooterPageState extends State<FooterPage> {
                   Text('Powered by Nexsport',style: TextStyle(fontWeight:FontWeight.w300, fontSize: 12.0,color: Color(0xFF162A49)),),
                 ]
               ),
-            ),
+            
           )
       ),
       floatingActionButton: new FloatingActionButton(
