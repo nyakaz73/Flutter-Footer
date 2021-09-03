@@ -4,10 +4,10 @@ import 'package:footer/footer.dart';
 class FooterView extends StatefulWidget {
   final List<Widget> children;
   final Footer footer;
-  final int flex;
-  FooterView({@required this.children, @required this.footer, this.flex}) {
+  final int? flex;
+  FooterView({required this.children, required this.footer, this.flex}) {
     if (flex != null) {
-      if (this.flex > 10 || this.flex < 1) {
+      if (this.flex! > 10 || this.flex! < 1) {
         throw ArgumentError('Only 1-10 Flex range is allowed');
       }
     }
@@ -36,11 +36,11 @@ class FooterViewState extends State<FooterView> {
         child: new Column(
           children: <Widget>[
             new Expanded(
-              flex: widget.flex == null ? 8 : 10 - widget.flex,
+              flex: widget.flex == null ? 8 : 10 - widget.flex!,
               child: new Container(),
             ),
             new Expanded(
-                flex: widget.flex == null ? 2 : widget.flex,
+                flex: widget.flex == null ? 2 : widget.flex!,
                 child: widget.footer)
           ],
         ),
