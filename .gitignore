@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+.vscode/launch.json
 
 # IntelliJ related
 *.iml
