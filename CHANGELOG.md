@@ -11,3 +11,7 @@
 
 * Bug Fixes Including:
 * Changing Footer **padding** attribute from **double** to **EdgeInsetsGeometry**
+
+
+## [0.0.4] - 2022-01-28
+* Added Null Safety to package
