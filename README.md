@@ -12,7 +12,7 @@ A new Flutter package which helps developers in creating Customisable Footer for
 
 To use this package :
 
-* add the dependancy to your [pubspec.yaml](https://github.com/nyakaz73/Flutter-Footer/blob/master/pubspec.yanl) file.
+* add the dependency to your [pubspec.yaml](https://github.com/nyakaz73/Flutter-Footer/blob/master/pubspec.yanl) file.
 ```yaml
     dependencies:
      flutter:
@@ -254,12 +254,12 @@ class FooterPageState extends State<FooterPage> {
 <img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer3.gif" width="400em" height="800em" />
 
 ### Pull Requests
-I Welcome and i encourage all Pull Requests
+I welcome and I encourage all Pull Requests
 
 ## Created and Maintained by
 * Author: [Tafadzwa Lameck Nyamukapa](https://github.com/nyakaz73) :
 * Email:  [tafadzwalnyamukapa@gmail.com]
-* Open for any colleboration and Remote Work!!
+* Open for any collaboration and Remote Work!!
 * Happy Fluttering!!
 
 ### License
