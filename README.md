@@ -1,5 +1,5 @@
 # Flutter Footer Widget
-
+The released package here on [pubstore](https://pub.dev/packages/footer)
 A new Flutter package which helps developers in creating Customisable Footer for both Android and IOS Apps.
 
 ### Show some :heart: and :star: the repo to support the project
