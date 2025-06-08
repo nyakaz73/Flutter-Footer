@@ -4,6 +4,9 @@ A new Flutter package which helps developers in creating Customisable Footer for
 
 ### Show some :heart: and :star: the repo to support the project
 
+Support my work and fuel the next open source project! 🙌
+☕ Buy Me a Coffee: https://buymeacoffee.com/stackdev.io
+
 ### Screenshots
 <img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer1.jpg" width="400em" height="800em" /> <img src="https://github.com/nyakaz73/Flutter-Footer/raw/master/footer2.jpg" width="400em" height="800em" />
 ## Getting Started
